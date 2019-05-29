@@ -32,7 +32,6 @@ arrows.click(toggleActive);
 //toggle Menu
 function toggleNav() {
   $('nav .menu_items').toggleClass('navActive');
-  $('nav .menu').toggleClass('open');
 }
 $('.fa-bars').click(toggleNav);
 

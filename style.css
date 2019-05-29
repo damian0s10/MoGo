@@ -86,10 +86,7 @@ a:hover {
   background: none;
   width: 100%;
   height: 4rem;
-}
-.container nav .open {
   background: rgba(243, 129, 129, 0.9);
-  border-bottom: white 1px solid;
 }
 .container nav .menu i {
   display: block;
@@ -275,7 +272,7 @@ a:hover {
   margin: 40px auto;
   max-width: 1200px;
 }
-.service2 .service2_container img {
+.service2 .service2_container .service2_container_image {
   width: 100%;
   padding: 10px 5px;
   margin: 0 auto;
@@ -298,9 +295,13 @@ a:hover {
 }
 .service2 .service2_container .service2_content .title img {
   width: 30px;
-  height: 30px;
   margin: 15px;
-
+  height: 30px;
+}
+.service2 .service2_container .service2_content .title .arrow {
+  width: 30px;
+  margin: 15px;
+  height: 30px;
 }
 .service2 .service2_container .service2_content .title p {
   color: #333333;
@@ -476,7 +477,7 @@ a:hover {
 .blog .blog_item {
   position: relative;
   margin: 20px 10px;;
-  max-width: 400px;
+  max-width: 380px;
   
 }
 .blog .blog_img {
