@@ -317,9 +317,7 @@ a:hover {
 
 .service2 .service2_container .service2_content .text {
   height: 0px;
-  border-right: 1px solid #e5e5e5;
-  border-left: 1px solid #e5e5e5;
-  border-bottom: 1px solid #e5e5e5;
+  border: none;
   display: flex;
   transition: height .3s;
   
@@ -340,6 +338,9 @@ a:hover {
 }
 .service2 .service2_container .service2_content .text_active {
   height: 180px;
+  border-right: 1px solid #e5e5e5;
+  border-left: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
 }
 .service2 .arrow {
   width: 22px;
