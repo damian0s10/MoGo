@@ -2,8 +2,6 @@
 function scroll(e) {
   const href = $(this).attr('href');
   e.preventDefault();
-  $('nav .items').toggleClass('navActive');
-  $('nav .menu').toggleClass('open');
   $('html, body').animate({
       scrollTop: $(href).offset().top
   }, 600);
@@ -11,6 +9,11 @@ function scroll(e) {
 };
 
 $('.container li a[href^="#"]').click(scroll);
+
+// toggle menu
+  $(".fa-bars").click(function(){
+    $(".menu_items").slideToggle();
+  });
 
 // open close paragraph
 const paragraphs = $('.service2 .service2_container .service2_content .text');
@@ -29,9 +32,5 @@ function toggleActive() {
 }
 arrows.click(toggleActive);
 
-//toggle Menu
-function toggleNav() {
-  $('nav .menu_items').toggleClass('navActive');
-}
-$('.fa-bars').click(toggleNav);
+
 
