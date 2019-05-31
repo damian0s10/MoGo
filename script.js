@@ -20,11 +20,11 @@ const paragraphs = $('.service2 .service2_container .service2_content .text');
 const arrows = $('.service2 .arrow');
 let last;
 function toggleActive() {
-  if(!this.classList.contains('arrow_active')) {
+  if(!$(this).hasClass('arrow_active')) {
     arrows.removeClass('arrow_active');
     paragraphs.removeClass('text_active');
-    this.classList.add('arrow_active');
-    this.parentElement.nextElementSibling.classList.add('text_active');
+    $(this).addClass('arrow_active');
+    $(this).parent().next().addClass('text_active');
   } else {
     arrows.removeClass('arrow_active');
     paragraphs.removeClass('text_active');
