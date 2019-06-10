@@ -3,19 +3,21 @@ html {
   font-size: 16px;
   overflow-x: hidden;
 }
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 body {
-  font-family: 'Roboto', sans-serif;
-  color: #333333;;
+  font-family: "Roboto", sans-serif;
+  color: #333333;
   margin: 0;
   padding: 0;
   overflow-x: hidden;
 }
 h2 {
   font-family: "Kaushan Script";
-  color:#333333;
+  color: #333333;
   text-align: center;
   font-size: 1.5rem;
   font-weight: 400;
@@ -24,7 +26,7 @@ h2 {
 }
 h1 {
   font-family: Montserrat;
-  color:#333333;
+  color: #333333;
   text-align: center;
   font-size: 1.85rem;
   font-weight: 700;
@@ -35,7 +37,7 @@ h1 {
 .line {
   width: 4rem;
   height: 3px;
-  background-color: #f38181;;
+  background-color: #f38181;
   margin: 2rem auto;
 }
 .paragraph {
@@ -52,11 +54,16 @@ a {
   text-decoration: none;
 }
 a:hover {
-  cursor: pointer; 
+  cursor: pointer;
 }
 .container {
   height: 100vh;
-  background-image: linear-gradient(to top, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%), url('img/bird.png');
+  background-image: linear-gradient(
+      to top,
+      rgba(252, 227, 138, 0.9) 0%,
+      rgba(243, 129, 129, 0.9) 100%
+    ),
+    url("img/bird.png");
   background-size: cover;
   background-position: center;
 }
@@ -66,8 +73,10 @@ a:hover {
   height: 4rem;
   display: flex;
   justify-content: center;
-  align-items: center; 
+  align-items: center;
   max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .container .logo {
   font-family: Montserrat;
@@ -77,7 +86,7 @@ a:hover {
   padding: 0;
   color: white;
 }
-.container  nav .menu {
+.container nav .menu {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -105,7 +114,7 @@ a:hover {
   width: 100%;
   top: 4rem;
 }
-.container  nav .menu_items li {
+.container nav .menu_items li {
   height: 3rem;
   border-bottom: white 1px dotted;
   width: 100%;
@@ -152,7 +161,8 @@ a:hover {
   margin-left: auto;
   margin-right: auto;
 }
-.aboutUs p , .service2 p{
+.aboutUs p,
+.service2 p {
   max-width: 950px;
   text-align: center;
   margin-left: auto;
@@ -164,7 +174,6 @@ a:hover {
   margin-top: 90px;
   margin-bottom: 110px;
   justify-content: space-around;
-
 }
 .aboutUs .images img {
   margin: 20px 5px;
@@ -211,7 +220,7 @@ a:hover {
   flex-wrap: wrap;
   justify-content: center;
 }
-.service .features .feature{
+.service .features .feature {
   width: 350px;
   display: flex;
   justify-content: center;
@@ -240,7 +249,12 @@ a:hover {
 }
 /*section design*/
 .design {
-  background-image: linear-gradient(to top, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.9) 100%), url('img/lake.png');
+  background-image: linear-gradient(
+      to top,
+      rgba(255, 255, 255, 0.8) 0%,
+      rgba(255, 255, 255, 0.9) 100%
+    ),
+    url("img/lake.png");
   background-size: cover;
   margin-bottom: 100px;
   position: relative;
@@ -259,14 +273,13 @@ a:hover {
 }
 .design .phones .secondImg {
   position: absolute;
-  width: 170px;;
+  width: 170px;
   height: auto;
   left: 160px;
-  bottom: -60px;;
-  
+  bottom: -60px;
 }
 /*section service2*/
-.service2 .service2_container{
+.service2 .service2_container {
   margin: 40px auto;
   max-width: 1200px;
 }
@@ -309,7 +322,7 @@ a:hover {
   text-transform: uppercase;
   margin-left: 0;
 }
-.service2 .service2_container .service2_content .title:nth-child(n+2) {
+.service2 .service2_container .service2_content .title:nth-child(n + 2) {
   margin-top: 10px;
 }
 
@@ -317,8 +330,7 @@ a:hover {
   height: 0px;
   border: none;
   display: flex;
-  transition: height .3s;
-  
+  transition: height 0.3s;
 }
 .service2 .service2_container .service2_content .text .box {
   margin: 20px 25px 20px 20px;
@@ -327,12 +339,11 @@ a:hover {
 .service2 .service2_container .service2_content .text .box p {
   color: #999999;
   font-family: "Roboto";
-  font-size: 1rem;;
+  font-size: 1rem;
   font-weight: 400;
   line-height: 1.5rem;
   text-align: justify;
-  margin:0 25px 0 0;
-  
+  margin: 0 25px 0 0;
 }
 .service2 .service2_container .service2_content .text_active {
   height: 180px;
@@ -344,34 +355,33 @@ a:hover {
   width: 22px;
   height: 22px;
 }
-.service2  .arrow:hover{
+.service2 .arrow:hover {
   cursor: pointer;
 }
-.service2 .arrow_active{
+.service2 .arrow_active {
   transform: rotate(180deg);
 }
 
 /*scroll*/
-::-webkit-scrollbar { 
-  -webkit-appearance:none; 
-  width:10px;
-  
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 10px;
 }
 ::-webkit-scrollbar-track {
   background: #e5e5e5;
   border-radius: 10px;
 }
 ::-webkit-scrollbar-thumb {
-  background:#95e1d3;
+  background: #95e1d3;
   border-radius: 10px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #73c0b1; 
+  background: #73c0b1;
 }
 .scrollToTop {
   width: 60px;
   height: 60px;
-  background: #f38181;;
+  background: #f38181;
   border-radius: 1px;
   position: fixed;
   bottom: 15px;
@@ -396,7 +406,7 @@ a:hover {
 }
 .scrollToTop:before {
   content: "\f106";
-  color:white;
+  color: white;
   font-family: "FontAwesome";
   font-size: 1.8rem;
 }
@@ -418,7 +428,6 @@ a:hover {
   justify-content: center;
   align-items: center;
   margin-top: 10px;
-  
 }
 .quote .quotation {
   max-width: 760px;
@@ -439,7 +448,7 @@ a:hover {
 .quote .quotation div .line {
   margin: 0;
 }
-.quote .quotation .author{
+.quote .quotation .author {
   color: #333333;
   font-family: "Kaushan Script";
   font-size: 1.5rem;
@@ -469,15 +478,14 @@ a:hover {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  max-width: 1200px;;
+  max-width: 1200px;
   margin: 0 auto;
   justify-content: center;
 }
 .blog .blog_item {
   position: relative;
-  margin: 20px 10px;;
+  margin: 20px 10px;
   max-width: 380px;
-  
 }
 .blog .blog_img {
   width: 100%;
@@ -532,7 +540,7 @@ a:hover {
   margin: 30px 5px;
   max-width: 480px;
 }
-.contact .contact_mogo h3{
+.contact .contact_mogo h3 {
   color: #cccccc;
   font-family: Montserrat;
   font-size: 3rem;
@@ -544,7 +552,7 @@ a:hover {
   font-family: Roboto;
   font-size: 1rem;
   font-weight: 400;
-  line-height: 1.5rem
+  line-height: 1.5rem;
 }
 .contact .contact_mogo .contact_folowers {
   color: #333333;
@@ -558,14 +566,13 @@ a:hover {
   align-items: center;
   max-width: 300px;
   margin-bottom: 20px;
-  
 }
-.contact .contact_mogo .contact_follow span{
+.contact .contact_mogo .contact_follow span {
   color: #999999;
   font-family: "Roboto";
   font-size: 1rem;
   font-weight: 400;
-  line-height: 1.5rem
+  line-height: 1.5rem;
 }
 
 .contact .contact_mogo form input {
@@ -611,7 +618,7 @@ a:hover {
 .contact_blog_item .item_text {
   margin-left: 10px;
 }
-.contact_blog_item .item_text_title{
+.contact_blog_item .item_text_title {
   color: #333333;
   font-family: Montserrat;
   font-size: 0.8rem;
@@ -638,7 +645,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  }
+}
 @media (orientation: landscape) {
   .container h2 {
     font-size: 2.5rem;
@@ -683,7 +690,7 @@ footer {
   .design .phones .secondImg {
     width: 240px;
     left: 230px;
-    bottom: -90px;;
+    bottom: -90px;
   }
   .work .gallery {
     grid-template-columns: repeat(4, 1fr);
@@ -700,7 +707,7 @@ footer {
   .design .phones .secondImg {
     width: 274px;
     left: 320px;
-    bottom: -100px;;
+    bottom: -100px;
   }
   .service2 .service2_container {
     display: flex;
@@ -710,42 +717,39 @@ footer {
 }
 
 @media (min-width: 1000px) {
-
-.container {
-  margin: 0 auto;
+  .container {
+    margin: 0 auto;
+  }
+  .container nav .menu {
+    width: 30%;
+    background: none;
+    border-bottom: none;
+  }
+  .container nav .menu i {
+    display: none;
+  }
+  .container nav .menu_items {
+    display: flex !important;
+    flex-direction: row;
+    align-items: center;
+    position: static;
+  }
+  .container nav .menu_items li {
+    border-bottom: none;
+    background: none;
+  }
+  .container nav .menu_items li a {
+    font-size: 1.5rem;
+  }
+  .container h2 {
+    font-size: 5rem;
+    max-width: 1200px;
+  }
+  .container h1 {
+    font-size: 7rem;
+    max-width: 1200px;
+  }
+  .blog .blog_item {
+    margin: 20px auto;
+  }
 }
-.container nav .menu {
-  width: 30%;
-  background: none;
-  border-bottom: none;
-}
-.container nav .menu i {
-  display: none;
- }
-.container nav .menu_items {
-  display: flex !important;
-  flex-direction: row;
-  align-items: center;
-  position: static; 
-}
-.container  nav .menu_items li {
-  border-bottom: none;
-  background: none;
-}
-.container nav .menu_items li a {
-  font-size: 1.5rem;
-}
-.container h2 {
-   font-size: 5rem;
-   max-width: 1200px;
-}
- .container h1 {
-  font-size: 7rem;
-   max-width: 1200px;
-}
-.blog .blog_item {
-   margin: 20px auto;;
-}
-
-}
-
