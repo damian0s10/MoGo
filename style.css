@@ -153,7 +153,6 @@ a:hover {
 }
 .container nav .menu_items li {
   height: 3rem;
-  border-bottom: white 1px dotted;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
